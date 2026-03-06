@@ -1,0 +1,72 @@
+/* GRUP SEÇİCİ: h1, h2 ve p etiketlerini aynı anda etkiler [cite: 9] */
+h1, h2, p {
+    margin: 0;
+    color: #333;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+/* HİYERARŞİK SEÇİCİ: nav içindeki ul li [cite: 9] */
+nav ul li {
+    display: inline-block; /* Menüyü yatay yapar [cite: 3] */
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f8f9fa;
+}
+
+/* HOVER EFEKTİ: Linklerin üzerine gelince renk değişimi [cite: 4] */
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #8da3d9;
+    color: white;
+    border-radius: 4px;
+}
+
+/* İKİ SÜTUNLU DÜZEN [cite: 6] */
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+}
+
+.main-content, .sidebar {
+    flex: 1;
+}
+
+/* METİN DÜZENLEME: En az 3 farklı CSS özelliği (size, color, line-height) [cite: 7] */
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    color: #444;
+    margin-top: 10px;
+}
+
+.yellow-card { background: #fef4d8; padding: 15px; border: 1px solid #f3e0a8; }
+.blue-card { background: #e3f2fd; padding: 15px; border: 1px solid #bbdefb; }
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
